@@ -35,11 +35,12 @@
     </parent>
     <artifactId>hbase-spark</artifactId>
     <name>Apache HBase - Spark</name>
+    <version>1.1.2.2.6.0.3-8</version>
 
     <properties>
-        <spark.version>1.6.0</spark.version>
-        <scala.version>2.10.4</scala.version>
-        <scala.binary.version>2.10</scala.binary.version>
+        <spark.version>2.1.0.2.6.0.3-8</spark.version>
+        <scala.version>2.11.11</scala.version>
+        <scala.binary.version>2.11</scala.binary.version>
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <top.dir>${project.basedir}/..</top.dir>
         <avro.version>1.7.6</avro.version>
