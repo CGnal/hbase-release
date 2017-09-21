@@ -20,7 +20,6 @@ package org.apache.spark.sql.datasources.hbase
 
 import org.apache.hadoop.hbase.spark.AvroSerdes
 import org.apache.hadoop.hbase.util.Bytes
-//import org.apache.spark.sql.execution.SparkSqlSerializer
 import org.apache.spark.sql.types._
 import org.apache.spark.unsafe.types.UTF8String
 

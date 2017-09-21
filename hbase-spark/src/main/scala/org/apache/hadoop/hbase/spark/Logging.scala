@@ -22,10 +22,12 @@ import org.slf4j.{Logger, LoggerFactory}
 import org.slf4j.impl.StaticLoggerBinder
 
 /**
- * Utility trait for classes that want to log data. Creates a SLF4J logger for the class and allows
- * logging messages at different levels using methods that only evaluate parameters lazily if the
- * log level is enabled.
- */
+  * Utility trait for classes that want to log data. Creates a SLF4J logger for the class and allows
+  * logging messages at different levels using methods that only evaluate parameters lazily if the
+  * log level is enabled.
+  * Logging is private in Spark 2.0
+  * This is to isolate incompatibilties across Spark releases.
+  */
 trait Logging {
 
   // Make the log field transient so that objects with Logging can

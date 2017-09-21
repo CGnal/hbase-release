@@ -21,7 +21,6 @@ import org.apache.hadoop.fs.{FileSystem, Path}
 import org.apache.hadoop.hbase.client.{Get, ConnectionFactory}
 import org.apache.hadoop.hbase.io.hfile.{CacheConfig, HFile}
 import org.apache.hadoop.hbase.mapreduce.LoadIncrementalHFiles
-import org.apache.hadoop.hbase.spark.Logging
 import org.apache.hadoop.hbase.{HConstants, CellUtil, HBaseTestingUtility, TableName}
 import org.apache.hadoop.hbase.util.Bytes
 import org.apache.hadoop.hbase.spark.HBaseRDDFunctions._

@@ -30,21 +30,37 @@
     <parent>
         <artifactId>hbase</artifactId>
         <groupId>org.apache.hbase</groupId>
-        <version>1.1.2.2.6.2.0-SNAPSHOT</version>
+        <version>1.1.2.2.6.2.0-205</version>
         <relativePath>..</relativePath>
     </parent>
     <artifactId>hbase-spark</artifactId>
     <name>Apache HBase - Spark</name>
+    <!--version>1.1.2.2.6.2.0-205</version-->
+    <version>1.1.2.2.6.2.0-205-cgnal</version>
 
     <properties>
-        <spark.version>2.1.1</spark.version>
-        <scala.version>2.11.8</scala.version>
+        <spark.version>2.1.1.2.6.2.0-205</spark.version>
+        <scala.version>2.11.11</scala.version>
         <scala.binary.version>2.11</scala.binary.version>
         <surefire.skipSecondPart>true</surefire.skipSecondPart>
         <top.dir>${project.basedir}/..</top.dir>
         <avro.version>1.7.6</avro.version>
         <avro.mapred.classifier></avro.mapred.classifier>
     </properties>
+
+    <repositories>
+
+        <repository>
+            <id>hortonworks releases public</id>
+            <url>http://repo.hortonworks.com/content/repositories/releases/</url>
+        </repository>
+
+        <repository>
+            <id>hortonworks groups public</id>
+            <url>http://repo.hortonworks.com/content/groups/public/</url>
+        </repository>
+
+    </repositories>
 
     <dependencies>
         <!-- Force import of Spark's servlet API for unit tests -->
@@ -282,6 +298,7 @@
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-client</artifactId>
+            <version>1.1.2.2.6.2.0-205</version>
             <exclusions>
                 <exclusion>
                     <groupId>log4j</groupId>
@@ -357,13 +374,15 @@
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-protocol</artifactId>
-            <version>${project.version}</version>
+            <!--version>${project.version}</version-->
+            <version>1.1.2.2.6.2.0-205</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-annotations</artifactId>
-            <version>${project.version}</version>
+            <!--version>${project.version}</version-->
+            <version>1.1.2.2.6.2.0-205</version>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
@@ -371,7 +390,8 @@
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-hadoop-compat</artifactId>
-            <version>${project.version}</version>
+            <!--version>${project.version}</version-->
+            <version>1.1.2.2.6.2.0-205</version>
             <scope>test</scope>
             <type>test-jar</type>
             <exclusions>
@@ -449,7 +469,8 @@
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-hadoop2-compat</artifactId>
-            <version>${project.version}</version>
+            <!--version>${project.version}</version-->
+            <version>1.1.2.2.6.2.0-205</version>
             <scope>test</scope>
             <type>test-jar</type>
             <exclusions>
@@ -526,12 +547,14 @@
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-server</artifactId>
-            <version>${project.version}</version>
+            <!--version>${project.version}</version-->
+            <version>1.1.2.2.6.2.0-205</version>
         </dependency>
         <dependency>
             <groupId>org.apache.hbase</groupId>
             <artifactId>hbase-server</artifactId>
-            <version>${project.version}</version>
+            <!--version>${project.version}</version-->
+            <version>1.1.2.2.6.2.0-205</version>
             <scope>test</scope>
             <type>test-jar</type>
         </dependency>

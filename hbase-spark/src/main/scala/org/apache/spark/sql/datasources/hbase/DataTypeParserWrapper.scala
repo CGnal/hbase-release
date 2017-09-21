@@ -21,8 +21,8 @@ import org.apache.spark.sql.catalyst.parser.CatalystSqlParser
 import org.apache.spark.sql.types.DataType
 
 trait DataTypeParser {
-  def parse(dataTypeString: String): DataType
-}
+    def parse(dataTypeString: String): DataType
+  }
 
 object DataTypeParserWrapper extends DataTypeParser{
   /*
